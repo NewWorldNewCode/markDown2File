@@ -1,0 +1,23 @@
+*.class
+
+# Package Files #
+*.war
+*.ear
+*.class
+.classpath
+.project
+.DS_Store
+Thumbs.db
+db.properties
+deploy.sh
+.settings/
+.gradle/
+classes/
+icon/
+work/
+image/
+work/
+tmp/
+target/
+bin/
+build/

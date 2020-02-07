@@ -1,0 +1,30 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'eclipse'
+
+group = 'net.oschina'
+version = '0.1'
+
+description = """Word-Uitl"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.5.3'
+    compile group: 'org.apache.poi', name: 'poi', version:'3.16'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version:'3.16'
+    compile 'poi:poi-scratchpad:3.1-FINAL'
+    compile group: 'com.itextpdf', name: 'itextpdf', version:'5.5.12'
+    compile group: 'com.itextpdf', name: 'itext-asian', version:'5.2.0'
+    testCompile group: 'junit', name: 'junit', version:'4.11'
+}
